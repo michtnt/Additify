@@ -7,18 +7,18 @@ import "react-native-gesture-handler";
 import Navigation, { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { Root } from "native-base";
+import Main from './src/screens/Main';
 
-
-import Library from "./src/screens/Library";
+// import Library from "./src/screens/Library";
 
 export default (props) =>{
 
   const RootStack = createStackNavigator({
-    Library: { screen: Library }
+    Main : { screen: Main },
   },
   {
     index: 0,
-    initialRouteName: "Library",
+    initialRouteName: "Main",
     headerMode: "none"
   });
 

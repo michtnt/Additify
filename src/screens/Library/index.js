@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import {FlatList, StyleSheet, TouchableOpacity } from "react-native";
 import { Header, Left, Right, Body, Text, Container, Content, View } from "native-base";
 import SearchBar from 'react-native-search-bar';
-// import Icon from "react-native-vector-icons/Feather";
+import Icon from "react-native-vector-icons/Feather";
 
 import mockData from '../../data/mockData';
 import LibraryList from './Components/LibraryList';
@@ -29,9 +29,6 @@ class Library extends Component {
                    <Left>
                       <Text style={styles.title}>Library</Text>
                    </Left>
-                   <Right>
-                       {/* <Icon name="x" /> */}
-                   </Right>
                </Header>
                <Content>
                <SearchBar
@@ -64,7 +61,10 @@ const styles = StyleSheet.create({
     },
     searchBar: {
 
-    }
+    },
+    // icon:{
+    //   fontSize: 30,
+    // }
 })
 
 export default Library;
