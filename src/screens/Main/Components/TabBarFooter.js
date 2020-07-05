@@ -9,6 +9,7 @@ import DeviceInfo from "react-native-device-info";
 import * as Animatable from "react-native-animatable";
 
 import Library from "../../Library";
+import Camera from  "../../Camera";
 
 // import Animated from "react-native-reanimated";
 const AnimatableIcon = Animatable.createAnimatableComponent(Icon);
@@ -33,10 +34,10 @@ export default class TabBarFooter extends PureComponent {
           index: 0
         },
         {
-          key: "Library",
-          icon: "briefcase",
+          key: "Camera",
+          icon: "camera",
           color:  "#09bcbc",
-          title: "Library",
+          title: "Camera",
           index: 1
         },
         {
@@ -45,13 +46,6 @@ export default class TabBarFooter extends PureComponent {
           color: "#09bcbc",
           title: "Library",
           index: 2
-        },
-        {
-          key: "Library",
-          icon: "settings",
-          color: "#09bcbc",
-          title: "Library",
-          index: 3
         },
       ],
     };
@@ -150,18 +144,14 @@ export default class TabBarFooter extends PureComponent {
         return <Library
           {...this.props}
         />;
-      case "Library":
-        return <Library
+      case "Camera":
+        return <Camera
           {...this.props}
         />;
       case "Library":
         return <Library
          {...this.props}
          />;
-      case "Library":
-        return <Library 
-        {...this.props} 
-        />;
       default:
         return null;
     }

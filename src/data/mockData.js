@@ -1,7 +1,20 @@
 /* eslint-disable prettier/prettier */
 
 export default [
-{"notice":"","status":"Safe","last_update":"2020-07-04T08:01:31+0300","foods":"Sauces, processed cheese and foods with added vitamins such as bread.","id":"2","veg":"0","name":"Riboflavin (Vitamin B2)","info":"Riboflavin is also known as vitamin B2. Obtained by fermenting yeast or synthesised artificially.","code":"101","category_id":"1","url":"http://e-additives.herokuapp.com/additives/101","function":"food coloring (yellow-orange)"}, 
+{
+    "notice":"",
+    "status":"Safe",
+    "last_update":"2020-07-04T08:01:31+0300",
+    "foods":"Sauces,processed cheese and foods with added vitamins such as bread.",
+    "id":"2",
+    "veg":"0", 
+    "name":"Riboflavin (Vitamin B2)",
+    "info":"Riboflavin is also known as vitamin B2. Obtained by fermenting yeast or synthesised artificially.",
+    "code":"101",
+    "category_id":"1",
+    "url":"http://e-additives.herokuapp.com/additives/101",
+    "function":"food coloring (yellow-orange)"
+}, 
 {"notice":"Safe in recommended doses. High doses should not be taken by people with gallstones, obstructive jaundice, acute bilious colic or toxic liver disorders.","status":"Safe","last_update":"2020-07-04T08:01:30+0300","foods":"Fats and oils, curry, processed cheese and fish fingers.","id":"1","veg":"","name":"Curcuma (turmeric)","info":"Orange-yellow colouring extracted from the rhizomes of the turmeric plant.","code":"100","category_id":"1","url":"http://e-additives.herokuapp.com/additives/100","function":"food coloring (yellow-orange)"}, 
 {"notice":"No adverse effects are known.","status":"","last_update":"2020-07-04T08:01:45+0300","foods":"Found in some types of cheese, chewing gum, ice cream, Parsley sauce, soups and green vegetables and fruits preserved in liquids.","id":"34","veg":"0","name":"Copper complexes of chlorophylls and chlorophyllins","info":"Derived from Chlorophyll, E140, by substitution of copper for the magnesium, which increases stability.","code":"141","category_id":"1","url":"http://e-additives.herokuapp.com/additives/141","function":"food coloring (green)"},
 {"notice":"Provokes asthma attacks, urticaria in children, linked to thyroid tumors, chromosomal damage. Tartrazine appears to cause the most allergic and/or intolerance reactions of all the azo dyes, particularly amongst those with an aspirin intolerance and asthmatics. Other reactions can include migraine, blurred vision, itching, rhinitis and purple skin patches. In conjunction with E210 tartrazine appears to create an over-activity in children.","status":"Unpermitted (Banned in Norway and Austria.)","last_update":"2020-07-04T08:01:31+0300","foods":"Fruit squash, fruit cordial, coloured fizzy drinks, instant puddings, cake mixes, custard powder, soups, sauces, ice cream, ice lollies, sweets, chewing gum, marzipan, jam, jelly, marmalade, mustard, yoghurt and many convenience foods together with glycerine, lemon and honey products.","id":"4","veg":"0","name":"Tartrazine (FD&C Yellow 5)","info":"Yellow coloured synthetic azo colour.","code":"102","category_id":"1","url":"http://e-additives.herokuapp.com/additives/102","function":"food coloring (lemon yellow)"}, 

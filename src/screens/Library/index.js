@@ -16,7 +16,12 @@ class Library extends Component {
           <View style={{backgroundColor: "transparent"}}>
             <LibraryList
               item={item}
-              onPress={()=>{}}
+              onPress={()=>{
+                this.props.navigation.navigate("LibraryDetails", {
+                  selectedLibrary: item,
+                  index
+                })
+              }}
             />
           </View>
         );
