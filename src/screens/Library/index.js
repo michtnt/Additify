@@ -11,6 +11,37 @@ import LibraryList from './Components/LibraryList';
 
 class Library extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchText: null,
+      searchedItems: [],
+    };
+  }
+    search = (searchText) => {
+        if (searchText.length > 2){
+          // this.setState({searchText});
+          let searchedItems = [];
+          const searchTextLowerCase = (searchText || "").toLowerCase();
+        
+          mockData.map((item,i)=>{
+            if ( item.name && item.name.toLowerCase().includes(searchTextLowerCase)
+                  || item.status && item.status.toLowerCase().includes(searchTextLowerCase) ){
+              searchedItems.push(item);
+            }
+          });
+          this.setState({
+            searchedItems: searchedItems,
+            searchText: searchText
+          });
+        } else {
+          this.setState({
+            searchedItems : [],
+            searchText: ''
+          });
+        }
+    }
+
     renderItem = ({ item, index }) => {
         return (
           <View style={{backgroundColor: "transparent"}}>
@@ -39,12 +70,12 @@ class Library extends Component {
                <SearchBar
                 ref="searchBar"
                 placeholder="Search"
-                //   onChangeText={...}
-                //   onSearchButtonPress={...}
-                //   onCancelButtonPress={...}
+                onChangeText={(value) => { this.search(value) }}
+                // onSearchButtonPress={...}
+                // onCancelButtonPress={...}
                 />
                 <FlatList
-                  data={mockData}
+                  data={this.state.searchText && this.state.searchText.length > 2 ? this.state.searchedItems : mockData}
                   renderItem={this.renderItem}
                   keyExtractor={data => data.code}
                 />
