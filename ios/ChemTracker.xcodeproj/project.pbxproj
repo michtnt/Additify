@@ -16,10 +16,6 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ChemTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ChemTrackerTests.m */; };
-		3F12C7B624C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */ = {isa = PBXBuildFile; fileRef = 3F12C7B524C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 */; };
-		3F12C7B724C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */ = {isa = PBXBuildFile; fileRef = 3F12C7B524C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 */; };
-		3F12C7B824C3FE77007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */ = {isa = PBXBuildFile; fileRef = 3F12C7B524C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 */; };
-		3F12C7B924C3FE77007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */ = {isa = PBXBuildFile; fileRef = 3F12C7B524C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 */; };
 		3F576A2B24B0897F00E9077B /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F576A1A24B0897E00E9077B /* Fontisto.ttf */; };
 		3F576A2C24B0897F00E9077B /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F576A1A24B0897E00E9077B /* Fontisto.ttf */; };
 		3F576A2D24B0897F00E9077B /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F576A1A24B0897E00E9077B /* Fontisto.ttf */; };
@@ -111,7 +107,6 @@
 		28B7D8A11B4B4952E4411272 /* libPods-ChemTracker-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChemTracker-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* ChemTracker-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChemTracker-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ChemTracker-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChemTracker-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F12C7B524C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93"; path = "../../../../Downloads/tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93"; sourceTree = "<group>"; };
 		3F576A1A24B0897E00E9077B /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		3F576A1B24B0897E00E9077B /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		3F576A1C24B0897E00E9077B /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -199,7 +194,6 @@
 			children = (
 				3F576A1924B0897E00E9077B /* Fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
-				3F12C7B524C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -456,7 +450,6 @@
 				3F576A2B24B0897F00E9077B /* Fontisto.ttf in Resources */,
 				3F576A3324B0897F00E9077B /* Feather.ttf in Resources */,
 				3F576A3F24B0897F00E9077B /* MaterialCommunityIcons.ttf in Resources */,
-				3F12C7B724C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */,
 				3F576A3B24B0897F00E9077B /* FontAwesome5_Brands.ttf in Resources */,
 				3F576A5724B0897F00E9077B /* FontAwesome.ttf in Resources */,
 			);
@@ -468,7 +461,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				3F12C7B624C3FE76007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +485,6 @@
 				3F576A6424B0897F00E9077B /* SimpleLineIcons.ttf in Resources */,
 				3F576A6024B0897F00E9077B /* EvilIcons.ttf in Resources */,
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
-				3F12C7B824C3FE77007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +506,6 @@
 				3F576A2D24B0897F00E9077B /* Fontisto.ttf in Resources */,
 				3F576A3524B0897F00E9077B /* Feather.ttf in Resources */,
 				3F576A4124B0897F00E9077B /* MaterialCommunityIcons.ttf in Resources */,
-				3F12C7B924C3FE77007C080F /* tessdata-bf82613055ebc6e63d9e3b438a5c234bfd638c93 in Resources */,
 				3F576A3D24B0897F00E9077B /* FontAwesome5_Brands.ttf in Resources */,
 				3F576A5924B0897F00E9077B /* FontAwesome.ttf in Resources */,
 			);

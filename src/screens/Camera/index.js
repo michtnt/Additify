@@ -6,6 +6,7 @@ import { Icon } from "native-base";
 import RNFetchBlob from "rn-fetch-blob";
 import ImageResizer from "react-native-image-resizer";
 import RNPermissions from "react-native-permissions";
+import RNTextDetector from "react-native-text-detector";
 
 import CameraScreen from "../../../lib/CameraScreen";
 const flashOn = require("../../../assets/flash-on.png");
@@ -45,6 +46,8 @@ export default class CameraModal extends React.Component {
     if (this.camera) {
       const options = { quality: 0.5, base64: true, width: 400 };
       const data = await this.camera.takePictureAsync(options);
+      const visionResp = await RNTextDetector.detectFromUri(data.uri);
+      console.log('visionResp', visionResp);
       this.props.navigation.state.params.savePicName({
         uri: data.uri,
         base64: data.base64
