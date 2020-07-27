@@ -179,7 +179,7 @@ class LibraryDetails extends PureComponent {
         <Container>
         <Header style={styles.header} >
             <Left>
-            <Text style={styles.headerTitle} ellipsizeMode="tail" numberOfLines={1}>Additives Details</Text>
+            <Text style={styles.headerTitle} ellipsizeMode="tail" numberOfLines={1}>Details</Text>
             </Left>
             <Right>
             <Button
@@ -192,7 +192,7 @@ class LibraryDetails extends PureComponent {
             </Right>
         </Header>
         <Content style={{ paddingHorizontal:20, paddingBottom:20, paddingTop: 20}}>
-            <Text style={styles.title}>Additives Name</Text>
+            <Text style={styles.title}>Name</Text>
             <ListItem style={styles.list}>
               <Text>{selected.name ? selected.name : "No details provided."}</Text>
             </ListItem>

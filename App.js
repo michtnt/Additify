@@ -10,6 +10,8 @@ import { Root } from "native-base";
 import Main from './src/screens/Main';
 import LibraryDetails from './src/screens/Library/Components/LibraryDetails';
 import Camera from './src/screens/Camera';
+import Intro from './src/screens/Intro';
+
 // import Library from "./src/screens/Library";
 
 export default (props) =>{
@@ -17,11 +19,12 @@ export default (props) =>{
   const RootStack = createStackNavigator({
     Main : { screen: Main },
     LibraryDetails : { screen: LibraryDetails },
-    Camera: { screen: Camera }
+    Camera: { screen: Camera },
+    Intro: { screen: Intro }
   },
   {
     index: 0,
-    initialRouteName: "Main",
+    initialRouteName: "Intro",
     headerMode: "none"
   });
 

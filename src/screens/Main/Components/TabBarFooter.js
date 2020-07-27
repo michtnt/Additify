@@ -10,6 +10,7 @@ import * as Animatable from "react-native-animatable";
 
 import Library from "../../Library";
 import Camera from  "../../Camera";
+import Setting from "../../Settings";
 
 // import Animated from "react-native-reanimated";
 const AnimatableIcon = Animatable.createAnimatableComponent(Icon);
@@ -28,7 +29,7 @@ export default class TabBarFooter extends PureComponent {
       routes: [
         {
           key: "Library",
-          icon: "file-text",
+          icon: "book",
           color: "#09bcbc",
           title: "Library",
           index: 0
@@ -41,10 +42,10 @@ export default class TabBarFooter extends PureComponent {
           index: 1
         },
         {
-          key: "Library",
-          icon: "dollar-sign",
+          key: "Settings",
+          icon: "settings",
           color: "#09bcbc",
-          title: "Library",
+          title: "Settings",
           index: 2
         },
       ],
@@ -148,8 +149,8 @@ export default class TabBarFooter extends PureComponent {
         return <Camera
           {...this.props}
         />;
-      case "Library":
-        return <Library
+      case "Settings":
+        return <Setting
          {...this.props}
          />;
       default:

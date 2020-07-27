@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { PureComponent } from "react";
-import { View, TouchableOpacity, StyleSheet } from "react-native";
+import { View, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { Text, Badge } from "native-base";
 
 
@@ -12,17 +12,16 @@ class LibraryList extends PureComponent {
 
     render() {
       const { item, style } = this.props;
-  
       return (
         <View>
           <TouchableOpacity
             activeOpacity={0.5}
             onPress={this.onPressed}>
             <View style={[styles.container, style]} pointerEvents="box-only">
-              <Text numberOfLines={1} style={[styles.titleText]}>
-                {item.name}
-              </Text>
-              <Text>{item.status}</Text>               
+              {/* <Image source={require("../../../../assets/1.png")}/> */}
+              <Text numberOfLines={1} style={[styles.titleText]}>{item.name}</Text>
+              { item.status == "Safe" ? <Badge success><Text>{item.status}</Text></Badge> : <Badge warning><Text>{item.status}</Text></Badge> }
+              <Text style={{marginTop: 10}}>{item.function}</Text>
            </View>
            </TouchableOpacity>
         </View>
@@ -52,8 +51,8 @@ class LibraryList extends PureComponent {
       alignItems: "center",
     },
     titleText: {
-      fontSize:20,
-      fontWeight:"bold",
+      fontSize:15,
+      fontWeight:"600",
       lineHeight:30,
       marginRight:55
     },

@@ -63,17 +63,20 @@ class Library extends Component {
            <Container>
                <Header style={styles.header}>
                    <Left>
-                      <Text style={styles.title}>Library</Text>
+                      <Text style={styles.title}>Dictionary📖</Text>
                    </Left>
+                   <Right>
+                     <Icon name="search" style={styles.icon} />
+                   </Right>
                </Header>
                <Content>
-               <SearchBar
+               {/* <SearchBar
                 ref="searchBar"
                 placeholder="Search"
                 onChangeText={(value) => { this.search(value) }}
                 // onSearchButtonPress={...}
                 // onCancelButtonPress={...}
-                />
+                /> */}
                 <FlatList
                   data={this.state.searchText && this.state.searchText.length > 2 ? this.state.searchedItems : mockData}
                   renderItem={this.renderItem}
@@ -91,16 +94,18 @@ const styles = StyleSheet.create({
         borderBottomWidth: 0
     },
     title: {
-        fontSize: 30,
-        paddingLeft: 20,
+        fontSize: 25,
+        marginLeft: 25,
         fontWeight: "bold"
     },
     searchBar: {
 
     },
-    // icon:{
-    //   fontSize: 30,
-    // }
+    icon:{
+      fontSize: 25,
+      marginRight: 20,
+      // marginTop: 10
+    }
 })
 
 export default Library;
