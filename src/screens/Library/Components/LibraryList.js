@@ -20,7 +20,12 @@ class LibraryList extends PureComponent {
             <View style={[styles.container, style]} pointerEvents="box-only">
               {/* <Image source={require("../../../../assets/1.png")}/> */}
               <Text numberOfLines={1} style={[styles.titleText]}>{item.name}</Text>
-              { item.status == "Safe" ? <Badge success><Text>{item.status}</Text></Badge> : <Badge warning><Text>{item.status}</Text></Badge> }
+              { 
+              item.status == "Safe" ? 
+              <Badge success><Text>{item.status}</Text></Badge> 
+              : item.status == "Hazard" ? 
+              <Badge danger><Text>{item.status}</Text></Badge> 
+              : <Badge warning><Text>{item.status}</Text></Badge> }
               <Text style={{marginTop: 10}}>{item.function}</Text>
            </View>
            </TouchableOpacity>

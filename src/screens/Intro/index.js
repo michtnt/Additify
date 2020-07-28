@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image, Dimensions } from 'react-native';
 import { Container, Header, Content } from "native-base";
 import { NavigationActions, StackActions } from "react-navigation";
+import AsyncStorage from '@react-native-community/async-storage';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import Icon from "react-native-vector-icons/Feather";
 
@@ -112,9 +113,10 @@ const slides = [
         </View>
       );
     };
-    _onDone = () => {
+    _onDone = async () => {
       // User finished the introduction. Show real app through
       // navigation or simply by controlling state
+      await AsyncStorage.setItem('@finish_intro', JSON.stringify(true))
       this.props.navigation.dispatch(gotoMain);
     }
     render() {

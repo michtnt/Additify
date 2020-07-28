@@ -11,9 +11,13 @@ import Main from './src/screens/Main';
 import LibraryDetails from './src/screens/Library/Components/LibraryDetails';
 import Camera from './src/screens/Camera';
 import Intro from './src/screens/Intro';
+import AsyncStorage from '@react-native-community/async-storage';
 
 // import Library from "./src/screens/Library";
 
+const firstTime = async () => {
+  return await AsyncStorage.getItem('@finish_intro') == true
+}
 export default (props) =>{
 
   const RootStack = createStackNavigator({
@@ -24,7 +28,7 @@ export default (props) =>{
   },
   {
     index: 0,
-    initialRouteName: "Intro",
+    initialRouteName: firstTime() ? "Main" : "Intro",
     headerMode: "none"
   });
 
