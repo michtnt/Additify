@@ -30,6 +30,9 @@ class Library extends Component {
               searchedItems.push(item);
             }
           });
+
+          // searchedItems = searchedItems.sort((obj1, obj2) => obj1["name"] < obj2["name"] ? -1 : 1)
+          
           this.setState({
             searchedItems: searchedItems,
             searchText: searchText
@@ -59,6 +62,8 @@ class Library extends Component {
       };
 
     render(){
+
+      let data = mockData.sort((obj1, obj2) => obj1["name"] < obj2["name"] ? -1 : 1)
         return(
            <Container>
                <Header style={styles.header}>
@@ -70,15 +75,15 @@ class Library extends Component {
                    </Right>
                </Header>
                <Content>
-               {/* <SearchBar
+               <SearchBar
                 ref="searchBar"
                 placeholder="Search"
                 onChangeText={(value) => { this.search(value) }}
                 // onSearchButtonPress={...}
                 // onCancelButtonPress={...}
-                /> */}
+                />
                 <FlatList
-                  data={this.state.searchText && this.state.searchText.length > 2 ? this.state.searchedItems : mockData}
+                  data={this.state.searchText && this.state.searchText.length > 2 ? this.state.searchedItems : data}
                   renderItem={this.renderItem}
                   keyExtractor={data => data.code}
                 />
