@@ -64,6 +64,10 @@
 		3F576A6724B0897F00E9077B /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F576A2924B0897E00E9077B /* MaterialIcons.ttf */; };
 		3F576A6824B0897F00E9077B /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F576A2924B0897E00E9077B /* MaterialIcons.ttf */; };
 		3F576A6924B0897F00E9077B /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F576A2924B0897E00E9077B /* MaterialIcons.ttf */; };
+		3FE1F9CA24D2BA7200D29C95 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3FE1F9C924D2BA7200D29C95 /* tessdata */; };
+		3FE1F9CB24D2BA7200D29C95 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3FE1F9C924D2BA7200D29C95 /* tessdata */; };
+		3FE1F9CC24D2BA7200D29C95 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3FE1F9C924D2BA7200D29C95 /* tessdata */; };
+		3FE1F9CD24D2BA7200D29C95 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3FE1F9C924D2BA7200D29C95 /* tessdata */; };
 		5207245BE2245E56D2BF3534 /* libPods-ChemTracker-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C3C56CD3DC0CDF5709829D /* libPods-ChemTracker-tvOSTests.a */; };
 		D9D971CDFE281ABB213CBF1F /* libPods-ChemTracker-ChemTrackerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2664F0A16BB67935B31D20 /* libPods-ChemTracker-ChemTrackerTests.a */; };
 		F54732B29AC5D4A14DBD307D /* libPods-ChemTracker-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B7D8A11B4B4952E4411272 /* libPods-ChemTracker-tvOS.a */; };
@@ -123,6 +127,7 @@
 		3F576A2724B0897E00E9077B /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		3F576A2824B0897E00E9077B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		3F576A2924B0897E00E9077B /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		3FE1F9C924D2BA7200D29C95 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = ../../../../Downloads/tessdata; sourceTree = "<group>"; };
 		4B2664F0A16BB67935B31D20 /* libPods-ChemTracker-ChemTrackerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChemTracker-ChemTrackerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD93F33FB754713B7015142 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
 		63C5C34854D40DF8090227CC /* Pods-ChemTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemTracker.release.xcconfig"; path = "Target Support Files/Pods-ChemTracker/Pods-ChemTracker.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +199,7 @@
 			children = (
 				3F576A1924B0897E00E9077B /* Fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				3FE1F9C924D2BA7200D29C95 /* tessdata */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -445,6 +451,7 @@
 				3F576A5B24B0897F00E9077B /* Zocial.ttf in Resources */,
 				3F576A3724B0897F00E9077B /* Entypo.ttf in Resources */,
 				3F576A6724B0897F00E9077B /* MaterialIcons.ttf in Resources */,
+				3FE1F9CB24D2BA7200D29C95 /* tessdata in Resources */,
 				3F576A4324B0897F00E9077B /* AntDesign.ttf in Resources */,
 				3F576A4F24B0897F00E9077B /* FontAwesome5_Solid.ttf in Resources */,
 				3F576A2B24B0897F00E9077B /* Fontisto.ttf in Resources */,
@@ -461,6 +468,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				3FE1F9CA24D2BA7200D29C95 /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +487,7 @@
 				3F576A5424B0897F00E9077B /* FontAwesome5_Regular.ttf in Resources */,
 				3F576A3C24B0897F00E9077B /* FontAwesome5_Brands.ttf in Resources */,
 				3F576A3824B0897F00E9077B /* Entypo.ttf in Resources */,
+				3FE1F9CC24D2BA7200D29C95 /* tessdata in Resources */,
 				3F576A6824B0897F00E9077B /* MaterialIcons.ttf in Resources */,
 				3F576A4424B0897F00E9077B /* AntDesign.ttf in Resources */,
 				3F576A5024B0897F00E9077B /* FontAwesome5_Solid.ttf in Resources */,
@@ -501,6 +510,7 @@
 				3F576A5D24B0897F00E9077B /* Zocial.ttf in Resources */,
 				3F576A3924B0897F00E9077B /* Entypo.ttf in Resources */,
 				3F576A6924B0897F00E9077B /* MaterialIcons.ttf in Resources */,
+				3FE1F9CD24D2BA7200D29C95 /* tessdata in Resources */,
 				3F576A4524B0897F00E9077B /* AntDesign.ttf in Resources */,
 				3F576A5124B0897F00E9077B /* FontAwesome5_Solid.ttf in Resources */,
 				3F576A2D24B0897F00E9077B /* Fontisto.ttf in Resources */,
@@ -891,6 +901,7 @@
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
+					"-lstdc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ChemTracker;
@@ -908,12 +919,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 97DJSAB4Q6;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ChemTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
+					"-lstdc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ChemTracker;

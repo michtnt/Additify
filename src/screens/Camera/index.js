@@ -43,17 +43,19 @@ export default class CameraModal extends React.Component {
   }
 
   takePicture = async() => {
+    var arr = []
     if (this.camera) {
+      try{
       const options = { quality: 0.5, base64: true, width: 400 };
       const data = await this.camera.takePictureAsync(options);
       const visionResp = await RNTextDetector.detectFromUri(data.uri);
-      console.log('visionResp', visionResp);
-      this.props.navigation.state.params.savePicName({
-        uri: data.uri,
-        base64: data.base64
-      });
+      // console.log('visionResp', visionResp);
+      arr.push(visionResp)
+      } catch(e){
+        console.warn(e)
+      }
     }
-    this.props.navigation.goBack();
+    this.props.navigation.navigate("Result", {result: arr});
   };
 
   async onBottomButtonPressed(event) {

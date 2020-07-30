@@ -99,7 +99,6 @@ target 'ChemTracker' do
   pod 'RNTextDetector', path: '../node_modules/react-native-text-detector/ios'
   pod 'TesseractOCRiOS', :git => 'git://github.com/parallaxe/Tesseract-OCR-iOS.git', :branch => 'macos-support'
 
-
   target 'ChemTrackerTests' do
     inherit! :complete
     # Pods for testing
