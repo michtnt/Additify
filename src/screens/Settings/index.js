@@ -13,13 +13,18 @@ class Setting extends Component {
                 </Header>
                 <Content>
                     <List>
-                    <ListItem noBorder icon>
+                    <ListItem icon>
                         <Left><Icon name="alert-triangle" style={styles.icon} /></Left>
                         <Body><Text>Bug Report</Text></Body>
                     </ListItem>
-                    <ListItem noBorder icon>
+                    <ListItem icon>
                         <Left><Icon name="star" style={styles.icon} /></Left>
                         <Body><Text>Rate Us</Text></Body>
+                    </ListItem>
+                    <ListItem icon onPress={() => this.props.navigation.navigate("FAQ")}>
+                        <Left><Icon name="info" style={styles.icon} /></Left>
+                        <Body><Text>FAQ</Text></Body>
+                        <Right><Icon name="chevron-right" style={styles.icon} /></Right>
                     </ListItem>
                     <ListItem noBorder icon>
                         <Text>v.1.0</Text>

@@ -11,6 +11,7 @@ import Main from './src/screens/Main';
 import LibraryDetails from './src/screens/Library/Components/LibraryDetails';
 import Camera from './src/screens/Camera';
 import Intro from './src/screens/Intro';
+import FAQ from './src/screens/Settings/components/FAQ';
 import AsyncStorage from '@react-native-community/async-storage';
 
 // import Library from "./src/screens/Library";
@@ -24,7 +25,8 @@ export default (props) =>{
     Main : { screen: Main },
     LibraryDetails : { screen: LibraryDetails },
     Camera: { screen: Camera },
-    Intro: { screen: Intro }
+    Intro: { screen: Intro },
+    FAQ: { screen: FAQ }
   },
   {
     index: 0,
