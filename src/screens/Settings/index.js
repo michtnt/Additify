@@ -26,6 +26,16 @@ class Setting extends Component {
                         <Body><Text>FAQ</Text></Body>
                         <Right><Icon name="chevron-right" style={styles.icon} /></Right>
                     </ListItem>
+                    <ListItem icon onPress={() => this.props.navigation.navigate("Terms")}>
+                        <Left><Icon name="book" style={styles.icon} /></Left>
+                        <Body><Text>Terms and Conditions</Text></Body>
+                        <Right><Icon name="chevron-right" style={styles.icon} /></Right>
+                    </ListItem>
+                    <ListItem icon onPress={() => this.props.navigation.navigate("PrivacyPolicy")}>
+                        <Left><Icon name="database" style={styles.icon} /></Left>
+                        <Body><Text>Privacy Policy</Text></Body>
+                        <Right><Icon name="chevron-right" style={styles.icon} /></Right>
+                    </ListItem>
                     <ListItem noBorder icon>
                         <Text>v.1.0</Text>
                     </ListItem>

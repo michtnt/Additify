@@ -58,6 +58,7 @@ class FAQ extends PureComponent {
               paddingRight: 25,
               paddingBottom: 20,
               paddingVertical: 10,
+              textAlign: "justify"
             }}
           >
             {item.content}

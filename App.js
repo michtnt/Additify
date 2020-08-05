@@ -12,6 +12,8 @@ import LibraryDetails from './src/screens/Library/Components/LibraryDetails';
 import Camera from './src/screens/Camera';
 import Intro from './src/screens/Intro';
 import FAQ from './src/screens/Settings/components/FAQ';
+import PrivacyPolicy from './src/screens/Settings/components/PrivacyPolicy';
+import Terms from './src/screens/Settings/components/Terms';
 import Result from './src/screens/Result';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -28,6 +30,8 @@ export default (props) =>{
     Camera: { screen: Camera },
     Intro: { screen: Intro },
     FAQ: { screen: FAQ },
+    PrivacyPolicy: { screen: PrivacyPolicy },
+    Terms: { screen: Terms },
     Result: { screen: Result }
   },
   {
