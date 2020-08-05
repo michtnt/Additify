@@ -79,6 +79,8 @@ class Library extends Component {
                 ref="searchBar"
                 placeholder="Search"
                 onChangeText={(value) => { this.search(value) }}
+                keyboardAppearance={"light"}
+                searchBarStyle={"minimal"}
                 // onSearchButtonPress={...}
                 // onCancelButtonPress={...}
                 />
