@@ -113,13 +113,15 @@ const styles = StyleSheet.create({
         fontSize: 25,
         fontWeight: "bold",
         marginTop: 20,
-        marginLeft: 25
+        marginLeft: 25,
+        marginRight: 25,
     },
     subsubtitle: {
         fontSize: 20,
         fontWeight: "bold",
         marginTop: 20,
-        marginLeft: 25
+        marginLeft: 25,
+        marginRight: 25,
     },
     bullets: {
         marginLeft: 40,

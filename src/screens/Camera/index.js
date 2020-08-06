@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Image, Platform, Alert,NativeModules } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, Image, Platform, Alert, ActivityIndicator } from "react-native";
 import { Icon } from "native-base";
 import RNFetchBlob from "rn-fetch-blob";
 import ImageResizer from "react-native-image-resizer";
@@ -38,7 +38,8 @@ export default class CameraModal extends React.Component {
         maxDuration: 5,
         // quality: RNCamera.Constants.VideoQuality["288p"],
       },
-      isRecording: false
+      isRecording: false,
+      isLoading: false
     };
   }
 
@@ -46,6 +47,7 @@ export default class CameraModal extends React.Component {
     var arr = []
     if (this.camera) {
       try{
+        this.setState({isLoading : true})
       const options = { quality: 0.5, base64: true, width: 400 };
       const data = await this.camera.takePictureAsync(options);
       const visionResp = await RNTextDetector.detectFromUri(data.uri);
@@ -55,6 +57,7 @@ export default class CameraModal extends React.Component {
         console.warn(e)
       }
     }
+    this.setState({isLoading: false})
     this.props.navigation.navigate("Result", {result: arr});
   };
 
@@ -174,10 +177,17 @@ export default class CameraModal extends React.Component {
             style={{
               flex: 0.4,
               backgroundColor: "transparent",
-              flexDirection: "row",
-              alignSelf: "flex-end",
+              // flexDirection: "row",
+              // alignSelf: "flex-end",
             }}
-          />
+          >
+        {this.state.isLoading ? (
+              <View style={{backgroundColor: "white", padding: 50, marginLeft: 30, marginRight: 30, borderRadius: 10}}>
+                <ActivityIndicator size="large" color="#0000ff"/>
+                <Text style={{ alignSelf: 'center', fontSize: 20, color: 'black', marginTop: 10 }}>Processing...</Text>
+              </View>
+          ) : null}
+          </View>
           <View
             style={{
               flex: 0.1,
