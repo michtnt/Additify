@@ -356,6 +356,8 @@ PODS:
     - React
   - RNSearchBar (3.5.1):
     - React
+  - RNSVG (12.1.0):
+    - React
   - RNTextDetector (0.0.6):
     - React
     - TesseractOCRiOS (~> 4.0.0)
@@ -444,6 +446,7 @@ DEPENDENCIES:
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSearchBar (from `../node_modules/react-native-search-bar`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - RNTextDetector (from `../node_modules/react-native-text-detector/ios`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - TesseractOCRiOS (from `git://github.com/parallaxe/Tesseract-OCR-iOS.git`, branch `macos-support`)
@@ -572,6 +575,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   RNSearchBar:
     :path: "../node_modules/react-native-search-bar"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   RNTextDetector:
     :path: "../node_modules/react-native-text-detector/ios"
   RNVectorIcons:
@@ -654,6 +659,7 @@ SPEC CHECKSUMS:
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
   RNSearchBar: 54ad41edd78385681730b02b5e069900436d996b
+  RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   RNTextDetector: 3983fcecbd4a95ea4664d3269a62c1b14c3a712b
   RNVectorIcons: 368d6d8b8301224e5ffb6254191f4f8876c2be0d
   TesseractOCRiOS: f51bbcd27d84b9ac59950790413a7e4219e84483

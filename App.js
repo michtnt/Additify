@@ -36,7 +36,7 @@ export default (props) =>{
   },
   {
     index: 0,
-    initialRouteName: firstTime() ? "Main" : "Intro",
+    initialRouteName: !firstTime() ? "Main" : "Intro",
     headerMode: "none"
   });
 
