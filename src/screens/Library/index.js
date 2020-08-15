@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 
 import React, { Component } from "react";
-import { Animated, FlatList, StyleSheet, TouchableOpacity, Platform } from "react-native";
+import { Animated, FlatList, StyleSheet, TouchableOpacity, Platform, ScrollView } from "react-native";
 import { Header, Left, Right, Body, Text, Container, Content, View, Button } from "native-base";
 import SearchBar from 'react-native-search-bar';
 import Icon from "react-native-vector-icons/Feather";
@@ -207,7 +207,7 @@ class Library extends Component {
                 // onCancelButtonPress={...}
                 />
                 </View>
-                <View style={styles.backgroundFooter}>
+                <ScrollView contentContainerStyle={styles.backgroundFooter}>
                 <View style={{flexDirection: "row", alignSelf:'center'}}>
                   <Animated.View style={{...styles.box, marginLeft: this.state.boxAnimation, position: "absolute", width: this.state.boxSize}} />
                   <Button transparent onPress={() => this.pressAll(this.state.boxAnimation)}><Text style={styles.button}>All</Text></Button>
@@ -220,7 +220,7 @@ class Library extends Component {
                   renderItem={this.state.allActive ? this.renderAll : this.state.safeActive ? this.renderSafe : this.state.warningActive ? this.renderWarning : this.renderHazard}
                   keyExtractor={data => data.code}
                 />
-                </View>
+                </ScrollView>
                </Content>
            </Container>
         )

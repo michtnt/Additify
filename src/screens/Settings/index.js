@@ -7,7 +7,7 @@ import Icon from "react-native-vector-icons/Feather";
 class Setting extends Component {
     render(){
         return(
-            <Container>
+            <Container style={{backgroundColor: "#DDA15E"}}>
                 <Header style={styles.header}>
                     <Left><Icon name="chevron-left" onPress={() => this.props.navigation.goBack()} style={{...styles.icon, fontSize: 30}}/></Left>
                     <Body><Text style={styles.title}>Settings</Text></Body>
@@ -50,7 +50,7 @@ class Setting extends Component {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: "white",
+        backgroundColor: "#DDA15E",
         borderBottomWidth: 0
     },
     title: {
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
       fontSize: 20,
       marginLeft: 15,
       // marginTop: 10
-    }
+    },
 })
 
 export default Setting;

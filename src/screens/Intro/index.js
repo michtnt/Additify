@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image, Dimensions, Platform } from 'react-native';
-import { Container, Header, Content } from "native-base";
+import { Container, Header, Content, Button } from "native-base";
 import { NavigationActions, StackActions } from "react-navigation";
 import AsyncStorage from '@react-native-community/async-storage';
 import AppIntroSlider from 'react-native-app-intro-slider';
@@ -83,18 +83,29 @@ const slides = [
       marginRight: 30,
       marginTop: 10
     },
-    button:{
-      // color: '#012F3C',
-      color: 'white',
+    buttonText:{
+      color: '#283618',
       fontSize: 18,
-      marginTop: 15
+      marginLeft: 20,
+      marginTop: 5
+      // marginTop: 15,
+      // marginRight: deviceWidth/2 - 40,
+    },
+    button: {
+      padding: 10,
+      backgroundColor: "white",
+      width: 100, 
+      height: 50,
+      borderRadius: 0,
+      borderRadius: 20,
+      marginRight: deviceWidth/2 - 70,
     },
     backgroundTop: {
       // flexDirection:"row",
       justifyContent:"center",
       paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 0 : 0),
       // paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 25 : 0),
-      height: (isIphoneX() ? 714 : Platform.OS === "android" ? 700 : 700),
+      height: (isIphoneX() ? 714 : Platform.OS === "android" ? 500 : 500),
       top:0,
       left:0,
       right:0,
@@ -102,7 +113,15 @@ const slides = [
       borderBottomRightRadius: 20,
       backgroundColor: "white"
     },
-    layer: {
+    activeDotStyle:{
+      width: 40,
+      backgroundColor: "white",
+      marginBottom: 140
+    },
+    dotStyle:{
+      width: 10,
+      backgroundColor: "grey",
+      marginBottom: 140
     }
   });
 
@@ -134,8 +153,17 @@ const slides = [
     };
     _renderNextButton = () => {
       return (
-        <View>
-          <Text style={styles.button}>Next</Text>
+        <View style={{bottom: 30}}>
+          <View style={styles.button}>
+           <Text style={styles.buttonText}>Next</Text>
+          </View>
+        </View>
+      );
+    };
+    _renderDoneButton = () => {
+      return (
+        <View style={{bottom: 30}}>
+           <Text style={{...styles.buttonText, marginRight: deviceWidth/2 - 100, color: "white" }}>Let's get Started <Icon name="arrow-right" style={{fontSize: 20}} /></Text>
         </View>
       );
     };
@@ -150,9 +178,12 @@ const slides = [
         renderItem={this._renderItem} 
         data={slides} 
         onDone={this._onDone} 
+        activeDotStyle={styles.activeDotStyle}
+        dotStyle={styles.dotStyle}
         // showSkipButton
         // renderSkipButton={this._renderSkipButton}
         renderNextButton={this._renderNextButton}
+        renderDoneButton={this._renderDoneButton}
         />;
     }
   }

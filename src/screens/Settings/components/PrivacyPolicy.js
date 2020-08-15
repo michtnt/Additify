@@ -8,7 +8,7 @@ import Icon from "react-native-vector-icons/Feather";
 class PrivacyPolicy extends PureComponent {
     render(){
         return(
-            <Container>
+            <Container style={{backgroundColor: "#DDA15E"}}>
             <Header style={styles.header}>
                 <Left><Icon name="arrow-left" style={styles.icon} onPress={() => {this.props.navigation.goBack()}}/></Left>
             </Header>
@@ -100,7 +100,7 @@ class PrivacyPolicy extends PureComponent {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: "white",
+        backgroundColor: "#DDA15E",
         borderBottomWidth: 0
     },
     title: {

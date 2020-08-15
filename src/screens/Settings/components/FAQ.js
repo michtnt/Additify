@@ -39,7 +39,7 @@ class FAQ extends PureComponent {
             padding: 20,
             justifyContent: "space-between",
             alignItems: "center" ,
-            backgroundColor: expanded ? "#e3f1f1" : "white" }}>
+            backgroundColor: expanded ? "#FEFAE0" : "#DDA15E" }}>
           <Text style={{ fontWeight: "600" }}>
               {" "}{item.title}
             </Text>
@@ -53,7 +53,8 @@ class FAQ extends PureComponent {
         return (
           <Text
             style={{
-              backgroundColor: "#e3f1f1",
+              // backgroundColor: "#e3f1f1",
+              backgroundColor: "#FEFAE0",
               paddingLeft: 25,
               paddingRight: 25,
               paddingBottom: 20,
@@ -68,7 +69,7 @@ class FAQ extends PureComponent {
 
     render(){
         return(
-            <Container>
+            <Container style={{backgroundColor: "#DDA15E"}}>
             <Header style={styles.header}>
                 <Left><Icon name="arrow-left" style={styles.icon} onPress={() => {this.props.navigation.goBack()}}/></Left>
             </Header>
@@ -91,7 +92,7 @@ class FAQ extends PureComponent {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: "white",
+        backgroundColor: "#DDA15E",
         borderBottomWidth: 0
     },
     title: {
