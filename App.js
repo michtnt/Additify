@@ -9,15 +9,15 @@ import { createStackNavigator } from "react-navigation-stack";
 import { Root } from "native-base";
 import Main from './src/screens/Main';
 import LibraryDetails from './src/screens/Library/Components/LibraryDetails';
+import Library from "./src/screens/Library";
 import Camera from './src/screens/Camera';
 import Intro from './src/screens/Intro';
+import Setting from "./src/screens/Settings";
 import FAQ from './src/screens/Settings/components/FAQ';
 import PrivacyPolicy from './src/screens/Settings/components/PrivacyPolicy';
 import Terms from './src/screens/Settings/components/Terms';
 import Result from './src/screens/Result';
 import AsyncStorage from '@react-native-community/async-storage';
-
-// import Library from "./src/screens/Library";
 
 const firstTime = async () => {
   return await AsyncStorage.getItem('@finish_intro') == true
@@ -26,9 +26,11 @@ export default (props) =>{
 
   const RootStack = createStackNavigator({
     Main : { screen: Main },
+    Library : { screen: Library },
     LibraryDetails : { screen: LibraryDetails },
     Camera: { screen: Camera },
     Intro: { screen: Intro },
+    Setting : { screen: Setting },
     FAQ: { screen: FAQ },
     PrivacyPolicy: { screen: PrivacyPolicy },
     Terms: { screen: Terms },
@@ -36,7 +38,7 @@ export default (props) =>{
   },
   {
     index: 0,
-    initialRouteName: !firstTime() ? "Main" : "Intro",
+    initialRouteName: !firstTime() ? "Library" : "Intro",
     headerMode: "none"
   });
 

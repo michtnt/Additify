@@ -1,16 +1,17 @@
 /* eslint-disable prettier/prettier */
 
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Image, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Image, Dimensions, Platform } from 'react-native';
 import { Container, Header, Content } from "native-base";
 import { NavigationActions, StackActions } from "react-navigation";
 import AsyncStorage from '@react-native-community/async-storage';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import Icon from "react-native-vector-icons/Feather";
+import { isIphoneX } from "react-native-iphone-x-helper";
 
 const gotoMain = StackActions.reset({
   index: 0,
-  actions: [NavigationActions.navigate({ routeName: "Main" })]
+  actions: [NavigationActions.navigate({ routeName: "Library" })]
 });
 
 const deviceWidth = Dimensions. get('window').width;
@@ -35,9 +36,9 @@ const slides = [
     },
     {
       key: 'three',
-      title: 'Health Empowers You.',
+      title: 'Health empowers you.',
       text: 'An apple a day keeps the doctor away.',
-      image:  require('../../../assets/the-munchies.png'),
+      image: require('../../../screen-design/elements/IntroScreen-3.png'),
       backgroundColor: '#264218',
       message: 'One step at a time, let\'s build a healthier you.'
     }
@@ -67,13 +68,15 @@ const slides = [
       fontSize: 35,
       // color: '#012F3C',
       color: 'white',
-      fontWeight: "bold",
-      alignSelf: "center"
+      fontWeight: '500',
+      alignSelf: "center",
+      marginLeft: 20,
+      marginRight: 20
     },
     subtitle:{
       // color: '#52A470',
       color: 'white',
-      fontSize: 15,
+      fontSize: 20,
       alignSelf: "center",
       textAlign: "center",
       marginLeft: 30,
@@ -85,6 +88,21 @@ const slides = [
       color: 'white',
       fontSize: 18,
       marginTop: 15
+    },
+    backgroundTop: {
+      // flexDirection:"row",
+      justifyContent:"center",
+      paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 0 : 0),
+      // paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 25 : 0),
+      height: (isIphoneX() ? 714 : Platform.OS === "android" ? 700 : 700),
+      top:0,
+      left:0,
+      right:0,
+      borderBottomLeftRadius: 20,
+      borderBottomRightRadius: 20,
+      backgroundColor: "white"
+    },
+    layer: {
     }
   });
 
@@ -92,11 +110,18 @@ const slides = [
     _renderItem = ({ item }) => {
       return (
         <Container style={styles.slide}>
+          { item.key != 'three' ? 
           <Content>
           <Image source={item.image} style={styles.image} />
           <Text style={styles.title}>{item.title}</Text>
           <Text style={styles.subtitle}>{item.message}</Text>
-          </Content>
+          </Content> :
+          <View style={styles.backgroundTop}>
+            <Image source={item.image} style={{...styles.image, height: deviceHeight/2 - 100 }} />
+            <Text style={{...styles.title, color: '#283618'}}>{item.title}</Text>
+            <Text style={{...styles.subtitle, color: '#283618'}}>{item.message}</Text>
+          </View>
+         }
         </Container>
       );
     }

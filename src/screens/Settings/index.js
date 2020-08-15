@@ -9,7 +9,9 @@ class Setting extends Component {
         return(
             <Container>
                 <Header style={styles.header}>
-                    <Left><Text style={styles.title}>Settings</Text></Left>
+                    <Left><Icon name="chevron-left" onPress={() => this.props.navigation.goBack()} style={{...styles.icon, fontSize: 30}}/></Left>
+                    <Body><Text style={styles.title}>Settings</Text></Body>
+                    <Right />
                 </Header>
                 <Content>
                     <List>
@@ -53,7 +55,6 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 25,
-        marginLeft: 25,
         fontWeight: "bold"
     },
     subtitle: {
