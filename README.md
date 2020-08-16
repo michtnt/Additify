@@ -10,6 +10,12 @@ a React Native app that I made with intention for people to be more aware of the
 2. run `npm install && cd ios && pod install && cd .. && npm start` on this directory
 3. run `react-native run-ios` or `react-native run-android` on this directory
 ## Screenshots 📱
+![Intro Screen 1](./app-screenshots/iPhone8-mockup-result/iPhone8-Intro-1_iphone7plusspacegrey_portrait.png)
+![Intro Screen 2](./app-screenshots/iPhone8-mockup-result/iPhone8-Intro-2_iphone7plusspacegrey_portrait.png)
+![Intro Screen 3](./app-screenshots/iPhone8-mockup-result/iPhone8-Intro-3_iphone7plusspacegrey_portrait.png)
+![Main 1](./app-screenshots/iPhone8-mockup-result/iPhone8-Main-1_iphone7plusspacegrey_portrait.png)
+![Main 2](./app-screenshots/iPhone8-mockup-result/iPhone8-Main-2_iphone7plusspacegrey_portrait.png)
+![FAQ](./app-screenshots/iPhone8-mockup-result/iPhone8-FAQ_iphone7plusspacegrey_portrait.png)
 ## Additional Details 🔍
 ### Purpose 💡
 I was building this app initially to see how much I have improved my development skills compared to my previous React Native app (https://github.com/tanoto-the-explorer/Cook-Book) and realised that I improved my UI design skills, wrote cleaner and better code, improved my problem solving and googling skills, understand React Native more and fix the bugs faster. I made this in approximately 3 days with procrastination.

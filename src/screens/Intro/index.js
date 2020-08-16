@@ -85,9 +85,9 @@ const slides = [
     },
     buttonText:{
       color: '#283618',
-      fontSize: 18,
+      fontSize: 20,
       marginLeft: 20,
-      marginTop: 5
+      // marginTop: 5
       // marginTop: 15,
       // marginRight: deviceWidth/2 - 40,
     },
@@ -163,7 +163,7 @@ const slides = [
     _renderDoneButton = () => {
       return (
         <View style={{bottom: 30}}>
-           <Text style={{...styles.buttonText, marginRight: deviceWidth/2 - 100, color: "white" }}>Let's get Started <Icon name="arrow-right" style={{fontSize: 20}} /></Text>
+           <Text style={{...styles.buttonText, marginRight: deviceWidth/2 - 130, color: "white", fontSize: 25 }}>Let's get Started <Icon name="arrow-right" style={{fontSize: 20}} /></Text>
         </View>
       );
     };

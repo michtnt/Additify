@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 
 import React, { Component } from "react";
-import { Animated, FlatList, StyleSheet, TouchableOpacity, Platform, ScrollView } from "react-native";
-import { Header, Left, Right, Body, Text, Container, Content, View, Button } from "native-base";
+import { Animated, FlatList, StyleSheet, Platform, SafeAreaView } from "react-native";
+import { Header, Left, Right, Body, Text, Container, Content, View, Button, Footer } from "native-base";
 import SearchBar from 'react-native-search-bar';
 import Icon from "react-native-vector-icons/Feather";
 import { isIphoneX } from "react-native-iphone-x-helper";
@@ -207,7 +207,7 @@ class Library extends Component {
                 // onCancelButtonPress={...}
                 />
                 </View>
-                <ScrollView contentContainerStyle={styles.backgroundFooter}>
+                <View style={{...styles.backgroundFooter, flex:1}}>
                 <View style={{flexDirection: "row", alignSelf:'center'}}>
                   <Animated.View style={{...styles.box, marginLeft: this.state.boxAnimation, position: "absolute", width: this.state.boxSize}} />
                   <Button transparent onPress={() => this.pressAll(this.state.boxAnimation)}><Text style={styles.button}>All</Text></Button>
@@ -220,7 +220,7 @@ class Library extends Component {
                   renderItem={this.state.allActive ? this.renderAll : this.state.safeActive ? this.renderSafe : this.state.warningActive ? this.renderWarning : this.renderHazard}
                   keyExtractor={data => data.code}
                 />
-                </ScrollView>
+                </View>
                </Content>
            </Container>
         )
@@ -248,18 +248,18 @@ const styles = StyleSheet.create({
       // marginTop: 10
     },
     backgroundFooter: {
-         // flexDirection:"row",
-         justifyContent:"center",
-         paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 0 : 0),
-         // paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 25 : 0),
-         height: (isIphoneX() ? 714 : Platform.OS === "android" ? 700 : 700),
-         top:0,
-         left:0,
-         right:0,
-         borderTopLeftRadius: 30,
-         borderTopRightRadius: 30,
-         backgroundColor: "white",
-         marginTop: 10
+      // flexDirection:"row",
+      justifyContent:"center",
+      paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 0 : 0),
+      // paddingTop: (isIphoneX() ? 15 : Platform.OS === "android" ? 25 : 0),
+      height: (isIphoneX() ? 714 : Platform.OS === "android" ? 700 : 700),
+      top:0,
+      left:0,
+      right:0,
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 30,
+      backgroundColor: "white",
+      marginTop: 10
     },
     button: {
       color: '#707070'
