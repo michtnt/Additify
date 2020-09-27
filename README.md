@@ -16,6 +16,7 @@ a React Native app that I made with intention for people to be more aware of the
 <img src="/app-screenshots/iPhone8-mockup-result/Main-1.png" alt="Main Screen 1" title="Main Screen 1" width="50%" height="50%" />
 <img src="/app-screenshots/iPhone8-mockup-result/Main-2.png" alt="Main Screen 2" title="Main Screen 2" width="50%" height="50%" />
 <img src="/app-screenshots/iPhone8-mockup-result/FAQ.png" alt="FAQ" title="FAQ" width="50%" height="50%" />
+
 ## Additional Details 🔍
 ### Purpose 💡
 I was building this app initially to see how much I have improved my development skills compared to my previous React Native app (https://github.com/tanoto-the-explorer/Cook-Book) and realised that I improved my UI design skills, wrote cleaner and better code, improved my problem solving and googling skills, understand React Native more and fix the bugs faster. I made this in approximately 3 days with procrastination.
