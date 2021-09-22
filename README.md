@@ -20,5 +20,3 @@ a React Native app that I made with intention for people to be more aware of the
 ## Additional Details 🔍
 ### Purpose 💡
 I was building this app initially to see how much I have improved my development skills compared to my previous React Native app (https://github.com/tanoto-the-explorer/Cook-Book) and realised that I improved my UI design skills, wrote cleaner and better code, improved my problem solving and googling skills, understand React Native more and fix the bugs faster. I made this in approximately 3 days with procrastination.
-### Contributors 👩🏻‍💻
-I coded the whole project and Theo (https://github.com/theoho-png) jumped in and re-design my application UI directly after looking on how my UI is ugly in her opinion haha. I will admit that her design is much more warmer and cleaner, it has more contrast too and the color scheme she chose is really great (I din't know color schemes generator exists.)
